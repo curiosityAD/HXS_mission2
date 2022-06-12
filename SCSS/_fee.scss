@@ -1,0 +1,354 @@
+//Debug
+// .container {
+//     
+// }
+
+
+
+.fee-header {
+    background-image: url("../img/banner.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.fee-banner {
+    padding: 92px 0px 180px 0px;
+
+    h1 {
+        padding-bottom: 16px;
+    }
+
+    h4 {
+        padding-bottom: 169px;
+    }
+}
+
+@media(max-width:768px) {
+    .fee-header {
+        background-size: 100%;
+        background-position: top left;
+    }
+
+    .fee-banner {
+        padding: 0px 20px;
+
+
+        h1 {
+            padding: 230px 0px 16px 0px;
+        }
+    }
+}
+
+@media(max-width: 375px) {
+
+
+    .navbar {
+        background: $color-main-white;
+    }
+
+    .fee-header {
+        background-image: url("../img/banner_sm.svg");
+        background-repeat: no-repeat;
+        max-width: 100%;
+    }
+
+    .fee-banner {
+        padding: 0px 20px;
+        height: 495px;
+
+        h1 {
+            font-size: $text-32;
+            padding: 48px 0px 16px 0px;
+        }
+
+        h4 {
+            font-size: $text-16;
+        }
+    }
+}
+
+
+.fee-ball {
+    width: 361px;
+    height: 361px;
+    left: -280px;
+    top: 600px;
+    position: absolute;
+    z-index: -1;
+}
+
+.fee-payment {
+    padding-top: 10px;
+
+}
+
+.pay-select {
+    padding: 48px 0px;
+    white-space: nowrap;
+
+    li {
+        margin-left: 16px;
+    }
+}
+
+.pay-detail {
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-wrap: nowrap;
+
+    .card-outline {
+        max-width: 50%;
+        text-align: center;
+        padding: 0px 24px;
+        margin: 0px 8px;
+
+
+        h2 {
+            margin-bottom: 32px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid $color-decoline-gray;
+        }
+
+
+        .count {
+            margin-top: 32px;
+            flex-wrap: nowrap;
+
+            align-items: center;
+
+            .icon_equal {
+                font-size: $text-24;
+                padding: 0px 20px;
+            }
+
+            .card-bg {
+                width: 169px;
+                height: 108px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+                .p-count-num {
+                    font-size: $text-32;
+                    color: $color-main-blue;
+                }
+
+                .p-count-cost {
+                    font-size: $text-32;
+                    color: $color-main-black;
+                }
+
+                sub {
+                    font-size: $text-16;
+                }
+
+            }
+        }
+
+        .btn-blue {
+            margin-bottom: 32px;
+        }
+    }
+
+
+    .check-lists {
+        padding: 32px 0px 16px 0px;
+
+        .ck-list {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-bottom: 16px;
+
+            .icon_check {
+                width: 19px;
+                height: 16px;
+
+            }
+
+            .p-16 {
+                margin-left: 12px;
+                padding: 0px;
+            }
+        }
+
+    }
+}
+
+@media(max-width:768px) {
+    .fee-payment {
+        max-width: 100%;
+        padding-top: 100px;
+    }
+
+    .fee-ball {
+        width: 310px;
+        height: 310px;
+        left: -200px;
+        z-index: -1;
+    }
+
+    .pay-select {
+        max-width: 100%;
+        overflow: auto;
+        display: flex;
+        white-space: nowrap;
+
+        li {
+            margin-left: 8px;
+        }
+
+    }
+
+    .pay-detail {
+        max-width: 100%;
+        flex-wrap: wrap;
+
+        .card-outline {
+            max-width: 100%;
+            margin-bottom: 24px;
+
+            .count {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .check-lists {
+        max-width: 100%;
+
+        .ck-list {
+            text-align-last: left;
+
+            .p-16 {
+                margin-left: 0px;
+                font-size: $text-14;
+            }
+        }
+    }
+}
+
+@media(max-width: 375px) {
+
+    .fee-ball {
+        width: 204px;
+        height: 204px;
+        top: 1350px;
+        left: -120px;
+        z-index: -1;
+    }
+
+    .fee-payment {
+        max-width: 100%;
+        text-align: center;
+
+        .info-pay {
+            h2 {
+                font-size: $text-28;
+            }
+        }
+    }
+
+    .pay-select {
+        max-width: 100%;
+        overflow: auto;
+        display: flex;
+        white-space: nowrap;
+
+
+        li {
+            font-size: $text-16;
+            padding: 8px 16px;
+            margin: 0px;
+            margin-left: 6px;
+        }
+    }
+
+    .pay-detail {
+        max-width: 100%;
+        flex-wrap: wrap;
+        padding: 24px 0px 0px 0px;
+        margin-bottom: -24px;
+
+
+        .card-outline {
+            max-width: 100%;
+            margin-bottom: 24px;
+            margin-left: 0px;
+        }
+    }
+
+}
+
+.QA {
+    text-align: center;
+    padding-bottom: 100px;
+
+    h2 {
+        padding-top: 100px;
+        padding-bottom: 48px;
+    }
+
+    .qa-list {
+        margin-bottom: 16px;
+
+        .list-item-q {
+            padding: 16px 32px;
+            align-items: center;
+
+            cursor: pointer;
+
+            .icon_plus {
+                width: 20px;
+                height: 20px;
+            }
+
+            .icon_minus {
+                width: 20px;
+                height: 20px;
+            }
+
+        }
+
+        .item-info-show {
+            color: $color-content-gray;
+            line-height: 32px;
+            text-align-last: left;
+            padding: 8px 32px;
+            font-size: $text-16;
+
+        }
+    }
+}
+
+@media(max-width: 375px) {
+    .QA {
+        padding-bottom: 60px;
+
+        h2 {
+            font-size: $text-28;
+            padding-bottom: 32px;
+        }
+
+        .qa-list {
+            .p-18 {
+                font-size: $text-16;
+            }
+
+            .list-item-q {
+                padding: 16px;
+
+                .icon_plus {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+
+            .item-info-show {
+                padding: 8px 16px;
+            }
+        }
+    }
+}

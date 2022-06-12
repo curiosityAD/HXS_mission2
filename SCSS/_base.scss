@@ -1,0 +1,89 @@
+//_Base
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: $font-family;
+    font-size: $text-16;
+    font-weight: normal;
+    position: relative;
+
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+sub {
+    vertical-align: bottom;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.flex-sb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-sa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: $text-48;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.h1-mobile {
+    font-size: $text-28;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+h2 {
+    font-size: $text-32;
+    font-weight: bold;
+    line-height: 46px;
+}
+
+h3 {
+    font-size: $text-24;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: $text-20;
+}
+
+h5 {
+    font-size: $text-18;
+}
+
+.p-18 {
+    font-size: $text-18;
+    line-height: 26px;
+}
+
+.p-16 {
+    font-size: $text-16;
+    line-height: 24px;
+}
+
+.p-12 {
+    font-size: $text-12;
+    line-height: 17px;
+}
